@@ -14,9 +14,9 @@ function onFromSubmit(event) {
   const formElem = event.currentTarget.elements;
   const formEmail = formElem.email.value;
   const formPassword = formElem.password.value;
+  const formData = { formEmail, formPassword };
 
   event.currentTarget.reset();
 
-  console.log('onFromSubmit -> email', formEmail);
-  console.log('onFromSubmit -> password', formPassword);
+  console.log(formData);
 }
